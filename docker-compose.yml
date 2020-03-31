@@ -12,6 +12,8 @@ services:
   remote_host:
     container_name: remote_host
     image: remote-host
+    volumes:
+      - $PWD/scripts:/home/remote_user/scripts
     build: 
       context: centos7
     networks:
