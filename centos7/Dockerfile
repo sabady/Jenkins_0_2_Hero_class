@@ -21,6 +21,7 @@ RUN curl -O https://bootstrap.pypa.io/get-pip.py && \
 	pip install awscli --upgrade
 
 RUN yum install -y java-1.8.0-openjdk
+RUN yum install -y git
 
 CMD /usr/sbin/sshd -D
 
