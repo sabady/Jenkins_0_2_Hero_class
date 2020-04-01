@@ -14,6 +14,8 @@ services:
   remote_host:
     container_name: remote_host
     image: remote-host
+    environment:
+      - "JAVA_HOME=/etc/alternatives/java"
     volumes:
       - $PWD/scripts:/home/remote_user/scripts
     build: 
