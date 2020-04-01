@@ -15,7 +15,7 @@ services:
     container_name: remote_host
     image: remote-host
     environment:
-      - "JAVA_HOME=/etc/alternatives/java"
+      - "JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.242.b08-0.el7_7.x86_64"
     volumes:
       - $PWD/scripts:/home/remote_user/scripts
     build: 
