@@ -30,13 +30,13 @@ services:
     networks:
       - net
   web:
-    ontainer_name: web
+    container_name: web
     image: ansible-web
     build:
       context: jenkins-ansible/web
     ports:
       - "80:80"
-    etworks:
+    networks:
       - net
 networks:
   net:
